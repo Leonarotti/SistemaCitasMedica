@@ -4,7 +4,7 @@ const user = JSON.parse(localStorage.getItem('login_success')) || false;
 
 header.innerHTML = `<div class="content">
 <div class="menu container">
-    <a href="index.html" class="logo">
+    <a href="/index.html" class="logo">
         Clínica Árbol de Seda
     </a>
     <input type="checkbox" id="menu">
@@ -13,9 +13,9 @@ header.innerHTML = `<div class="content">
     </label>
     <nav class="navbar">
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="HTML-Pages/agenda.html">Agenda de citas</a></li>
-            <li><a href="HTML-Pages/medics.html">Médicos</a></li>
+            <li><a href="/index.html">Inicio</a></li>
+            <li><a href="../HTML-Pages/agenda.html">Agenda de citas</a></li>
+            <li><a href="../HTML-Pages/medics.html">Médicos</a></li>
             <li><a href="HTML-Pages/nosotros.html">Sobre nosotros</a></li>
             <li><a href="HTML-Pages/servicios.html">Servicios</a></li>
             <li><a id="login" class="btn-login" href="HTML-Pages/login.html">Iniciar Sesión</a></li>
