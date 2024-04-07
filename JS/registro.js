@@ -9,7 +9,7 @@ const handleFormSubmit = (event) => {
     const isValid = validateForm(formData);
     if (isValid) {
         registerUser(formData);
-        window.location.href = 'HTML-Pages/login.html';
+        window.location.href = '/HTML-Pages/login.html';
     }
 };
 
@@ -125,11 +125,11 @@ const validatePhone = (phone) => {
 }
 
 const validateEmail = (email) => {
-    return /[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-}
+    return /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email);
+};
 
 const validatePassword = (password) => {
-    return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,11}$/.test(password);
+    return /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#])[A-Za-z\d$@$!%*?&#]{8,11}$/.test(password);
 };
 
 const confirmPassword = (password, confirmationPassword) => { // confirmar contraseña

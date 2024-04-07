@@ -9,7 +9,7 @@ header.innerHTML = `<div class="content">
     </a>
     <input type="checkbox" id="menu">
     <label for="menu">
-        <img class="menu-icono" src="assets/menu.svg" alt="menu">
+        <img class="menu-icono" src="/assets/menu.svg" alt="menu">
     </label>
     <nav class="navbar">
         <ul>
@@ -26,7 +26,7 @@ header.innerHTML = `<div class="content">
 </div>`;
 
 footer.innerHTML = `<p>&copy; 2024 Clínica Árbol de Seda - Derechos reservados</p>
-<a href="../HTML-Pages/faq.html">Preguntas frecuentes</a>
+<a href="/HTML-Pages/faq.html">Preguntas frecuentes</a>
 <p class="hid">|</p>
 <a href="/HTML-Pages/contacto.html">Contacto</a>
 <p class="hid">|</p>
